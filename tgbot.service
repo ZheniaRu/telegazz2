@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram Bot
+After=network.target
+
+[Service]
+User=zz2
+Group=zz2
+
+WorkingDirectory=/home/zz2/telegazz2/
+Enviroment="PYTHONPATH=/home/zz2/telegazz2/"
+ExecStart=/home/zz2/telegazz2/.venv/bin/python /home/zz2/telegazz2/main.py
+
+[Install]
+WantedBy=multi-user.target
